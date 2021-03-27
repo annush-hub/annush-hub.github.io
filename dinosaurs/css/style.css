@@ -79,7 +79,8 @@ p {
 	width: 60%;
 }
 .footer {
-  background-color: #556B2F;
+  background: rgb(85,107,47);
+background: radial-gradient(circle, rgba(85,107,47,1) 0%, rgba(189,183,107,1) 100%);
   color: white;
   padding: 20px 0;
   margin-top: 30px;
