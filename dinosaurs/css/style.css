@@ -35,8 +35,9 @@ p {
 .header h1,
 .header h2 {
   color: #556B2F;
+  -webkit-text-stroke: 1px silver;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   text-shadow: black 1px 1px 0, black 2px 2px 0, 
                  black 3px 3px 0, black 4px 4px 0, 
                  black 5px 5px 0;
@@ -60,12 +61,12 @@ p {
 	text-align: center;
 }
 .page-navigation li a:hover {
-	color: yellowgreen;
-	background-color: black;
+	color: black;
+	background-color: silver;
 }
 
 .active  a {
-	color: yellowgreen;
+	color: white;
 	background-color: black;
 }
 
