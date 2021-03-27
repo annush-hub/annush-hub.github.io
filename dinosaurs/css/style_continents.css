@@ -1,0 +1,24 @@
+/* GENERAL STYLES*/
+ul, li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+h3 {
+font-family: "Segoe UI";
+font-size:28px;
+font-weight:500;
+margin: 5px;
+text-align: center;
+padding-left: 25px;
+}
+p {
+ font-size:18px;
+ font-family: "Segoe UI"; 
+ text-align: justify;
+ margin: 20px;
+}
+img {
+  padding: 20px;
+}
