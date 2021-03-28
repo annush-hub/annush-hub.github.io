@@ -22,3 +22,6 @@ input[type ="submit"]{
 h1{
 	text-align: center;
 }
+.article-ol li{
+	padding: 10px;
+}
