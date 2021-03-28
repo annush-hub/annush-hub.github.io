@@ -14,9 +14,8 @@ input, textarea{
 }
 
 input[type ="submit"]{
-	
-	font-size: 18px;
-	padding: 10px;
+  font-size: 18px;
+  padding: 10px;
   border: 1px solid ;
   border-radius: 5px;
   outline: none;
