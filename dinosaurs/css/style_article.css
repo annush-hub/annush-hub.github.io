@@ -14,7 +14,7 @@
 
 .article-ol a{
 	display: block;
-	line-height: 0;
+	line-height: 1em;
 	color:  #556b2f;
 	font-size:20px;
 	
