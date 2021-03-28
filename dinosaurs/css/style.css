@@ -309,3 +309,11 @@ border: 1px solid black;
   padding: 15px;
 
 }
+.art-title{
+	color: #556b2f;
+}
+
+
+.art-title:hover{
+	color: #BDB76B;
+}

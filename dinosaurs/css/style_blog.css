@@ -107,3 +107,6 @@ button:hover {
 	outline: none;
 }
 
+.art-img:hover{
+	opacity: 80%;
+}
