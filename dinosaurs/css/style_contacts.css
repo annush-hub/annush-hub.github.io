@@ -14,14 +14,18 @@ input, textarea{
 }
 
 input[type ="submit"]{
-	background-color: #556b2f;
-	color: white;
+	
 	font-size: 18px;
+	padding: 10px;
+  border: 1px solid ;
+  border-radius: 5px;
+  outline: none;
+}
+input[type ="submit"]:hover {
+  background-color: #556B2F;
+  color: white;
 }
 
 h1{
 	text-align: center;
-}
-.article-ol li{
-	padding: 10px;
 }
