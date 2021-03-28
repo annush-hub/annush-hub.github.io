@@ -42,7 +42,10 @@ p {
                  black 3px 3px 0, black 4px 4px 0, 
                  black 5px 5px 0;
 }
-
+.container h1, h2{
+font-size: 60px;
+color: #556B2F;
+}
 /* NAVIGATION */
 .page-navigation {
 	background-color: #222;
@@ -316,4 +319,7 @@ border: 1px solid black;
 
 .art-title:hover{
 	color: #BDB76B;
+}
+.art-img:hover{
+	opacity: 80%;
 }
