@@ -4,6 +4,7 @@
 	<title>Contacts</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_contacts.css">
 </head>
 <body>
 <!-- NAVIGATION -->
@@ -20,5 +21,16 @@
 		</div>
 	</nav>
 	<!-- /NAVIGATION -->
+	<section>
+		<form action="">
+			<h1>Зворотній зв'язок <small> (усі поля обов'язкові для заповнення)</small></h1>
+			<input type="text" placeholder="Ім'я" required pattern="[А-Яа-я]{1,32}" title="Введіть коректну інформацію">
+			<input type="text" placeholder="Email" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Введіть коректну інформацію"> 
+			<input type="text" placeholder="Номер телефону" required pattern="(\+?\d[- .]*){7,13}" title="Введіть коректну інформацію">
+			<input type="URL" placeholder="URL" required pattern="(\+?\d[- .]*){7,13}" title="Введіть коректну інформацію">
+			<textarea placeholder="Ваше повідомлення"></textarea>
+			<input type="submit" value="Відправити">
+		</form>
+	</section>
 </body>
 </html>

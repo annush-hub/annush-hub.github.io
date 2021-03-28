@@ -1,0 +1,24 @@
+form{
+	width: 50%;
+	margin: 50px auto;
+	padding: 10px;
+}
+
+input, textarea{
+	height: 40px;
+	display: block;
+	width: 50%;
+	margin: 20px auto;
+	border-radius: 6px;
+	text-indent: 15px;
+}
+
+input[type ="submit"]{
+	background-color: #556b2f;
+	color: white;
+	font-size: 18px;
+}
+
+h1{
+	text-align: center;
+}
