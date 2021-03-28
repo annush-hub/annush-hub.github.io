@@ -307,6 +307,7 @@ border: 1px solid black;
   margin-left: auto;
   font-family: Helvetica;
   color: white;
+  -webkit-text-stroke: 1px black;
   font-size: 50px;
   line-height: 1.3em;
   padding: 15px;
