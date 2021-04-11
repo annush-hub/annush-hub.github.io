@@ -299,7 +299,7 @@ ul {
 	}
 }
 
-article.accordion
+.accordion
 {
 	display: block;
 	width: 100%;
@@ -311,7 +311,7 @@ article.accordion
 	border-radius: 5px;
 	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
 }
-article.accordion section
+.accordion__item
 {
 	position: relative;
 	display: block;
@@ -324,7 +324,7 @@ article.accordion section
 	overflow: hidden;
 	border-radius: 3px;
 }
-article.accordion section h2
+.accordion__title
 {
 	position: absolute;
 	font-size: 1em;
@@ -349,7 +349,7 @@ article.accordion section h2
 	transform: rotate(-90deg);
 }
 
-article.accordion section h2 a
+.accordion__link
 {
 	display: block;
 	width: 100%;
@@ -358,7 +358,7 @@ article.accordion section h2 a
 	color: inherit;
 	outline: 0 none;
 }
-article.accordion section:target
+.accordion__item:target
 {
 	width: 30em;
 	padding: 0 1em;
@@ -367,7 +367,7 @@ article.accordion section:target
     background-size: cover;
 }
 
-article.accordion section:target h2
+.accordion__item:target .accordion__title
 {
 	position: static;
 	font-size: 1.3em;
@@ -379,8 +379,8 @@ article.accordion section:target h2
 	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
-article.accordion section,
-article.accordion section h2
+.accordion__item,
+.accordion__title
 {
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
