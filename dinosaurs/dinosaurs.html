@@ -1,115 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dinosaurs</title>
+	<title>Динозаври|Dinosaurs</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Dinosaurs">
     <meta name="keywords" content="Dinosaurs, dino, museum">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style_dino.css">
 </head>
-<body>
-	<!-- NAVIGATION -->
-	<nav class="page-navigation">
+	
+	<body>
+		<!-- Оболочка (grid-контейнер) -->
+		<div class="wrapper">
+			<!-- Шапка (grid - элемент) -->
+			<header class="header" id="header">
+				<a href="https://annush-hub.github.io/dinosaurs/" class="header__logo-link"><img src="images/dino-logo-1.png" class="header__logo"></a>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<a href="" class="header__link"><li class="header__link">Головна</li></a>
+						<a href="" class="header__link active"><li>Динозаври</li></a>
+						<a href="" class="header__link"><li>Блог</li></a>
+						<a href="" class="header__link"><li>Контакти</li></a>
+					</ul>
+				</nav>
+			</header>
 
-		<div class="container">
-			<div class="logo"><a href="https://annush-hub.github.io/dinosaurs/"><img src="images/dino-logo-1.png"></a></div>
-			<ul>
-				<li><a href="https://annush-hub.github.io/dinosaurs/">Головна</a></li>
-				<li class="active"><a href="https://annush-hub.github.io/dinosaurs/dinosaurs.html">Динозаври</a></li>
-				<li><a href="https://annush-hub.github.io/dinosaurs/blog.html">Блог</a></li>
-				<li><a href="https://annush-hub.github.io/dinosaurs/contacts.html">Контакти</a></li>
-			</ul>
-		</div>
-	</div>
-	</nav>
-	<!-- /NAVIGATION -->
+			<!-- Контент (grid-элемент + grid-контейнер) -->
+			<main class="main">
+				<!--<div class="header__img">
+					<img src="https://annush-hub.github.io/dinosaurs/images/header.png" alt="">
+				</div>-->
+				<!-- Контент (grid-элемент) -->
+				<section class="content">
+					
+					<section class="content__products products">
+						<h1 class="main__title">Географія динозаврів</h1>
+						<div class="collection__items">
+							<div class="collection__item  card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/pnamerika.png" alt=""></a>
+								</div>
+								<div class="collection__name">
+									<a href=""><h4 class="collection__title">Північна Америка</h4></a>
+									<p class="collection__text" >Північна Америка дала більше залишків динозаврів, ніж будь-який інший континент на землі.  Натиснувши на кнопку, ви матимете можливість переглянути 5 найвідоміших північноамериканських динозаврів, починаючи від Алозавра і закінчуючи Тиранозавром Рексом.</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
+							</div>
+							<div class="collection__item card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/europa.png" alt=""></a>
+								</div>
+								<div class="collection__name">
+								<a href=""><h4 class="collection__title">Європа</h4></a>
+								<p class="collection__text" >Майже кожна сучасна країна в Європі була останнім притулком для багатьох видів динозаврів. Натиснувши на кнопку, ви матимете можливість переглянути 5 європейських динозаврів, починаючи від "першої пташки" Археоптерикса і закінчуючи гігантським (і кривожедним) Мегалозавром.
+</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
 
+							</div>
+							<div class="collection__item card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/Asia.png" alt=""></a>
+								</div>
+								<div class="collection__name">
+								<a href=""><h4 class="collection__title">Азія</h4></a>
+								<p class="collection__text" >За останні кілька десятиліть у Центральній та Східній Азії було виявлено більше динозаврів, ніж на будь-якому іншому континенті на землі.Натиснувши на кнопку, ви матимете можливість переглянути 5 азіатських динозаврів, починаючи від  Ділонга і Велоцираптором.
+							</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
 
-		<div class="container">
-			<h2 class="collection-title">Географія динозаврів</h2>
-			<div class="collections">
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/images/art_1.png" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/pnamerika.png" alt="pnamerika" class="art-img"></a>
-						<div class="collection-text">
-							<a href=""><h3 class="art-title">Північна Америка</h3></a>
-							<p>Північна Америка дала більше знакових копалин динозаврів, ніж будь-який інший континент на землі.  Натиснувши на кнопку, ви матимете можливість переглянути 5 найвідоміших і найвпливовіших північноамериканських динозаврів, починаючи від Алозавра і закінчуючи Тиранозавром Рексом.
-							</p>
-							<a href=# target="_blank"><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/european.html" target="_blank" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/europa.png" alt="europa" class="art-img"></a>
-						<div class="collection-text">
-							<a href="https://annush-hub.github.io/dinosaurs/european.html" target="_blank"><h3 class="art-title">Європа</h3></a>
-							<p>Майже кожна сучасна країна в Європі була останнім притулком для багатьох видів динозаврів. Натиснувши на кнопку, ви матимете можливість переглянути 5 європейських динозаврів, починаючи від "першої пташки" Археоптерикса і закінчуючи гігантським (і кривожедним) Мегалозавром.
-							</p>
-							<a href="https://annush-hub.github.io/dinosaurs/european.html" target="_blank" target="_blank"><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/images/art_1.png" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/Asia.png" alt="asia" class="art-img"></a>
-						<div class="collection-text">
-							<a href=""><h3 class="art-title">Азія</h3></a>
-							<p>За останні кілька десятиліть у Центральній та Східній Азії було виявлено більше динозаврів, ніж на будь-якому іншому континенті на землі.Натиснувши на кнопку, ви матимете можливість переглянути 5 азіатських динозаврів, починаючи від пернатого (і злого) Ділонга і закінчуючи пернатим (і злим) Велоцираптором.
-							</p>
-							<a href=#><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>				
-			</div>
-		</div>
-<div class="container">
-			<hr>
-			<div class="collections">
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/images/art_1.png" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/pdamerika.png" alt="pdamerika" class="art-img"></a>
-						<div class="collection-text">
-							<a href=""><h3 class="art-title">Південна Америка</h3></a>
-							<p>Будинок перших динозаврів, Південна Америка, відомий широким різноманіттям життя динозаврів під час мезозойської ери, включаючи багатотонних тероподів, гігантських зауроподів та невелику кількість менших істот. Натиснувши на кнопку, ви зможете переглянути 5  найважливіших південноамериканських динозаврів.
-							</p>
-							<a href=#><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/images/art_1.png" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/afrika.png" alt="afrika" class="art-img"></a>
-						<div class="collection-text">
-							<a href=""><h3 class="art-title">Африка</h3></a>
-							<p>Порівняно з Євразією та Америкою Африка не особливо відома своїми скам’янілостями динозаврів - але динозаври, які жили на цьому континенті в епоху мезозою, були одними з найлютіших на планеті. Ось список 5 найважливіших африканських динозаврів, починаючи від Ардонікса і закінчуючи Спинозавром.
-							</p>
-							<a href=#><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/images/art_1.png" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/oceania.jpg" alt="oceania" class="art-img"></a>					
-						<div class="collection-text">
-							<a href=""><h3 class="art-title">Океанія</h3></a>
-							<p>Хоча Австралія та Океанія були далеко від основних напрямків еволюції динозаврів під час мезозойської ери, у цих віддалених куточках була значна частина тероподів, зауроподів та орнітопод. Ось список 5 найважливіших динозаврів Австралії та Океанії, починаючи від Антарктопельти і закінчуючи Ретоозавром.
-							</p>
-							<a href=#><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr>
-		</div>
+							</div>
+							<div class="collection__item card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/pdamerika.png" alt=""></a>
+								</div>
+								<div class="collection__name">
+								<a href=""><h4 class="collection__title">Південна Америка</h4></a>
+								<p class="collection__text" >Будинок перших динозаврів, Південна Америка, відомий широким різноманіттям життя динозаврів під час мезозойської ери, включаючи багатотонних тероподів, гігантських зауроподів та невелику кількість менших істот. Натиснувши на кнопку, ви зможете переглянути 5  найважливіших південноамериканських динозаврів.</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
 
-	<!-- /FOOTER -->
-	<footer class="footer">
-		<div class="container">
-			<p>Copyright © A.Bondarenko 2021</p>
+							</div>
+							<div class="collection__item card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/afrika.png" alt=""></a>
+								</div>
+								<div class="collection__name">
+								<a href=""><h4 class="collection__title">Африка</h4></a>
+								<p class="collection__text" >Порівняно з Євразією та Америкою Африка не особливо відома своїми скам’янілостями динозаврів - але динозаври, які жили на цьому континенті в епоху мезозою, були одними з найлютіших на планеті. Ось список 5 найважливіших африканських динозаврів, починаючи від Ардонікса і закінчуючи Спинозавром.</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
+
+							</div>
+							<div class="collection__item card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/oceania.jpg" alt=""></a>
+								</div>
+								<div class="collection__name">
+								<a href=""><h4 class="collection__title">Океанія</h4></a>
+								<p class="collection__text" >Хоча Австралія та Океанія були далеко від основних напрямків еволюції динозаврів під час мезозойської ери, у цих віддалених куточках була значна частина тероподів, зауроподів та орнітопод. Ось список 5 найважливіших динозаврів Австралії та Океанії, починаючи від Антарктопельти і закінчуючи Ретоозавром.</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
+
+							</div>
+						</div>
+					
+					<section class="content__products products">
+						<h1 class="main__title">Хронологія</h1>	
+						<div class="collection__item big ">			
+						<article class="accordion">
+
+						<section id="acc1">
+							<h2><a href="#acc1">1.Тріасовий пер.</a></h2>
+							<p>251 млн. років тому</p>
+						</section>
+	
+						<section id="acc2">
+							<h2><a href="#acc2">2.Пізній Тріасовий пер.</a></h2>
+							<p>225 млн. років тому</p>
+						</section>
+	
+						<section id="acc3">
+							<h2><a href="#acc3">3.Юрський пер.</a></h2>
+							<p>200 млн. років тому</p>
+						</section>
+	
+						<section id="acc4">
+							<h2><a href="#acc4">4.Пізній Юрський пер.</a></h2>
+							<p>150 млн. років тому</p>
+						</section>
+	
+						<section id="acc5">
+							<h2><a href="#acc5">5.Крейдовий пер.</a></h2>
+							<p>145 млн. років тому</p>
+						</section>
+						<section id="acc6">
+							<h2><a href="#acc6">6.Пізній Крейдовий пер.</a></h2>
+							<p>125 млн. років тому</p>
+						</section>
+						
+						<section id="acc7">
+							<h2><a href="#acc7">7.Масове вимирання</a></h2>
+							<p>65 млн. років тому</p>
+						</section>
+
+						</article>
+
+					</section>
+				</section>
+<div id="mybutton">
+	<a href="#header" class="collection__button button-up">^</a>
+</div>
+
+</section>
+
+			</main>
+			<footer class="footer">
+				<div class="footer__text">Copyight, 2021<br>A.Bondarenko</div>
+			</footer>
 		</div>
-	</footer>
-</body>
+	</body>
 </html>

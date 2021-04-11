@@ -1,97 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blog</title>
+	<title>Блог|Dinosaurs</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Dinosaurs">
     <meta name="keywords" content="Dinosaurs, dino, museum">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style_dino.css">
-	<link rel="stylesheet" type="text/css" href="css/style_blog.css">
 </head>
-<body>
-	<!-- NAVIGATION -->
-	<nav class="page-navigation">
+	
+	<body>
+		<!-- Оболочка (grid-контейнер) -->
+		<div class="wrapper">
+			<!-- Шапка (grid - элемент) -->
+			<header class="header" id="header">
+				<a href="https://annush-hub.github.io/dinosaurs/" class="header__logo-link"><img src="images/dino-logo-1.png" class="header__logo"></a>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<a href="" class="header__link"><li class="header__link">Головна</li></a>
+						<a href="" class="header__link"><li>Динозаври</li></a>
+						<a href="" class="header__link active"><li class="header__link">Блог</li></a>
+						<a href="" class="header__link"><li>Контакти</li></a>
+					</ul>
+				</nav>
+			</header>
 
-		<div class="container">
-			<div class="logo"><a href="https://annush-hub.github.io/dinosaurs/"><img src="images/dino-logo-1.png"></a></div>
-			<ul>
-				<li><a href="https://annush-hub.github.io/dinosaurs/">Головна</a></li>
-				<li ><a href="https://annush-hub.github.io/dinosaurs/dinosaurs.html">Динозаври</a></li>
-				<li class="active"><a href="https://annush-hub.github.io/dinosaurs/blog.html">Блог</a></li>
-				<li><a href="https://annush-hub.github.io/dinosaurs/contacts.html">Контакти</a></li>
-			</ul>
-		</div>
-	</div>
-	</nav>
-	<!-- /NAVIGATION -->
-
-
-		<div class="container">
-			<h2 class="collection-title">Відео до перегляду</h2>
-			<div class="collections">
-				<div class="collection-item-one">
-					<div class="collection-item">
-						<iframe  style="min-width: 100%; height: 500px; " src="https://www.youtube.com/embed/Tq0fv-QqIvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<div class="collection-text">
-							<h3>Таємниці динозаврів</h3>
-							<p>Жорстока смерть у прадавньому світі... І неймовірне відкриття через 77 мільонів років, назване найважливішою в історії знахідкою динозавра. Команда найкращих науковців здійснить мандрівку в часі і разгадає таємницю мумії динозавра
-							</p>
-							<button>Цікаво</button>
+			<!-- Контент (grid-элемент + grid-контейнер) -->
+			<main class="main">
+				<!--<div class="header__img">
+					<img src="https://annush-hub.github.io/dinosaurs/images/header.png" alt="">
+				</div>-->
+				<!-- Контент (grid-элемент) -->
+				<section class="content">
+					
+					<section class="content__products products">
+						<h1 class="main__title">Відео до перегляду</h1>
+						<div class="collection__item big card">
+							<iframe  style="min-width: 100%; height: 500px; " src="https://www.youtube.com/embed/Tq0fv-QqIvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							
+								<div class="collection__name">
+									<a href=""><h4 class="collection__title">Північна Америка</h4></a>
+									<p class="collection__text" >Північна Америка дала більше залишків динозаврів, ніж будь-який інший континент на землі.  Натиснувши на кнопку, ви матимете можливість переглянути 5 найвідоміших північноамериканських динозаврів, починаючи від Алозавра і закінчуючи Тиранозавром Рексом.</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
 						</div>
-					</div>
-				</div>
-		</div>
+						<h1 class="main__title">Географія динозаврів</h1>
+						<div class="collection__items">
+							<div class="collection__item  card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/art_1.png" alt=""></a>
+								</div>
+								<div class="collection__name">
+									<a href=""><h4 class="collection__title">10_неймовірних фактів про динозаврів</h4></a>
+									<p class="collection__text" >На сьогоднішній день вчені виділяють більше 500 різних видів динозаврів, але це не межа, насправді існувало значно більше різновидів, тому науку ще чекають нові відкриття.</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
+							</div>
+							<div class="collection__item card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/art-2.png" alt=""></a>
+								</div>
+								<div class="collection__name">
+								<a href=""><h4 class="collection__title">5_найпопулярніших динозаврів</h4></a>
+								<p class="collection__text" >Дослідіть, які динозаври існували у світі і які вони були великі. Дізнайтеся значення назв динозаврів і як їх вимовляти. Пропоную починати дослідження з цієї п’ятірки.</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
+
+							</div>
+							<div class="collection__item card">
+								<div class="collection__image">
+									<a href=""><img src="https://annush-hub.github.io/dinosaurs/images/art-3.png" alt=""></a>
+								</div>
+								<div class="collection__name">
+								<a href=""><h4 class="collection__title">Рекомендації до прочитання</h4></a>
+								<p class="collection__text" >Хочете дізнатись більше про динозаврів? Ось короткий список книг про динозаврів для любителів усіх мастей - від читачів, які шукають хороші палео-мемуари, до тих, хто сподівається покращити свої технічні знання.</p>
+								</div>
+								<a href="" class="collection__button">Цікаво</a>
+
+							</div>
+						</div>
+					</section>
+					<div id="mybutton">
+	<a href="#header" class="collection__button button-up">^</a>
 </div>
-
-				
-<div class="container">
-	<h2 class="collection-title">До прочитання</h2>
-			<hr>
-			<div class="collections">
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/images/art_1.png" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/art_1.png" alt="List picture" class="art-img"></a>
-						<div class="collection-text">
-							<a href=""><h3 class="art-title">10 неймовірних фактів <br>про динозаврів</h3></a>
-							<p>1. На сьогоднішній день вчені виділяють більше 500 різних видів динозаврів, але це не межа, насправді існувало значно більше різновидів, тому науку ще чекають нові відкриття.
-							</p>
-							<a href=#><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/article.html" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/art-2.png" alt="List picture" class="art-img"></a>
-						<div class="collection-text">
-							<a href="https://annush-hub.github.io/dinosaurs/article.html" target="_blank"><h3 class="art-title">5 найпопулярніших<br> динозаврів</h3></a>
-							<p>Дослідіть, які динозаври існували у світі і які вони були великі. Дізнайтеся значення назв динозаврів і як їх вимовляти. Пропоную починати з цієї п’ятірки.
-							</p>
-							<a href="https://annush-hub.github.io/dinosaurs/article.html" target="_blank"><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="collection-item-outer">
-					<div class="collection-item">
-						<a href="https://annush-hub.github.io/dinosaurs/images/art_1.png" target="_blank"><img src="https://annush-hub.github.io/dinosaurs/images/art-3.png" alt="List picture" class="art-img"></a>
-						<div class="collection-text">
-							<a href=""><h3 class="art-title">Рекомендована<br>літертура</h3></a>
-							<p>Хочете дізнатись більше про динозаврів?З чого слід починати, і які книги найкраще підходять для того, що ви хочете знати? Ось короткий список книг про динозаврів для любителів усіх рівнів.
-							</p>
-							<a href=#><button>Цікаво</button></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr>
+				</section>
+	</main>
+			<footer class="footer">
+				<div class="footer__text">Copyight, 2021<br>A.Bondarenko</div>
+			</footer>
 		</div>
-
-	<!-- /FOOTER -->
-	<footer class="footer">
-		<div class="container">
-			<p>Copyright © A.Bondarenko 2021</p>
-		</div>
-	</footer>
-</body>
+	</body>
 </html>

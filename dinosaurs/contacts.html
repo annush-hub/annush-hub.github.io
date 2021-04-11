@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contacts</title>
+	<title>Контакти|Dinosaurs</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Dinosaurs">
     <meta name="keywords" content="Dinosaurs, dino, museum">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style_contacts.css">
 </head>
-<body>
-<!-- NAVIGATION -->
-	<nav class="page-navigation">
-
-		<div class="container">
-			<div class="logo"><a href="https://annush-hub.github.io/dinosaurs/"><img src="images/dino-logo-1.png"></a></div>
-			<ul>
-				<li><a href="https://annush-hub.github.io/dinosaurs/">Головна</a></li>
-				<li><a href="https://annush-hub.github.io/dinosaurs/dinosaurs.html">Динозаври</a></li>
-				<li><a href="https://annush-hub.github.io/dinosaurs/blog.html">Блог</a></li>
-				<li class="active"><a href="https://annush-hub.github.io/dinosaurs/contacts.html">Контакти</a></li>
-			</ul>
+	
+	<body>
+		<div class="wrapper">
+			<header class="header" id="header">
+				<a href="https://annush-hub.github.io/dinosaurs/" class="header__logo-link"><img src="images/dino-logo-1.png" class="header__logo"></a>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<a href="" class="header__link"><li class="header__link">Головна</li></a>
+						<a href="" class="header__link"><li>Динозаври</li></a>
+						<a href="" class="header__link "><li class="header__link">Блог</li></a>
+						<a href="" class="header__link active"><li>Контакти</li></a>
+					</ul>
+				</nav>
+			</header>
+			<main class="main">
+				<section class="content">
+					<h1 class="main__title">Зворотній зв'язок <small> (усі поля обов'язкові для заповнення)</small></h1>
+					<section class="content__contacts">						
+						<form action="" class="content__form">				
+							<div><input class="content__input" type="text" placeholder="Ім'я" required pattern="[А-Яа-я]{1,32}" title="Введіть коректну інформацію"></div>
+							<div><input class="content__input" type="text" placeholder="Email" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Введіть коректну інформацію"> </div>
+							<div><input class="content__input" type="text" placeholder="Номер телефону" required pattern="(\+?\d[- .]*){7,13}" title="Введіть коректну інформацію"></div>
+							<div><input class="content__input" type="URL" placeholder="URL"pattern="https://.*" size="30"
+  							required title="Введіть коректну інформацію"></div>
+  							<div><textarea class="content__input"rea placeholder="Ваше повідомлення"></textarea></div>
+  							<div>
+  								<h4 class="collection__text" >Що сподобалось на сайті</h4>
+  									<input class="content__checkbox" type="checkbox" id="design" name="like">
+									<label class="content__label" for="design">Дизайн</label>
+									<input class="content__checkbox" type="checkbox" id="content" name="like">
+									<label class="content__label" for="content">Наповнення</label>
+									<input class="content__checkbox" type="checkbox" id="funcs" name="like">
+									<label class="content__label" for="funcs">Функціонал</label>
+									<input class="content__checkbox" type="checkbox" id="nothing" name="like">
+									<label class="content__label" for="nothing">Сайт не сподобався</label>
+							</div>
+  							<div><input type="submit" value="Відправити" class="collection__button"></div>
+						</form>
+			</section>		
+										<div id="mybutton">
+	<a href="#header" class="collection__button button-up">^</a>
+</div>
+		
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__text">Copyight, 2021<br>A.Bondarenko</div>
+			</footer>
 		</div>
-	</nav>
-	<!-- /NAVIGATION -->
-	<section>
-		<form action="">
-			<h1>Зворотній зв'язок <small> (усі поля обов'язкові для заповнення)</small></h1>
-			<input type="text" placeholder="Ім'я" required pattern="[А-Яа-я]{1,32}" title="Введіть коректну інформацію">
-			<input type="text" placeholder="Email" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Введіть коректну інформацію"> 
-			<input type="text" placeholder="Номер телефону" required pattern="(\+?\d[- .]*){7,13}" title="Введіть коректну інформацію">
-			<input type="URL" placeholder="URL"pattern="https://.*" size="30"
-  			required title="Введіть коректну інформацію">
-			<textarea placeholder="Ваше повідомлення"></textarea>
-			<input type="submit" value="Відправити">
-		</form>
-	</section>
-</body>
+	</body>
 </html>
