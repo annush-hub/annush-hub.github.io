@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Інтерактивно|Dinosaurs</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dinosaurs">
+    <meta name="keywords" content="Dinosaurs, dino, museum">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+	
+	<body onload = "Start()">
+		<div class="wrapper">
+			<header class="header" id="header">
+				<a href="https://annush-hub.github.io/dinosaurs/" class="header__logo-link"><img src="images/dino-logo-1.png" class="header__logo"></a>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<a href="https://annush-hub.github.io/dinosaurs/index.html" class="header__link"><li class="header__link">Головна</li></a>
+						<a href="https://annush-hub.github.io/dinosaurs/dinosaurs.html" class="header__link"><li>Динозаври</li></a>
+						<a href="https://annush-hub.github.io/dinosaurs/blog.html" class="header__link "><li class="header__link">Блог</li></a>
+						<a href="#" class="header__link"><li>Контакти</li></a>
+					</ul>
+				</nav>
+			</header>
+			<main class="main">
+				<section class="content">
+					<h1 class="main__title">Рандомна позиція картинки</h1>
+					<section class="content__interactive">						
+						<div class="content__img-random">
+							<img src="https://annush-hub.github.io/dinosaurs/images/art-2.png" id="image">
+							<button class="collection__button" onclick="Init()" id="image-btn">Запуск</button>
+						</div>	
+					</section>											
+					<h1 class="main__title">Зміна розміру</h1>
+					<section class="content__interactive">						
+						<div class="content__size-change">
+							<div id="string">Тестовий текст</div>
+							<button class="collection__button" id="str_size_1">А+</button>
+							<span class="font-zoom__item"></span>
+							<button class="collection__button" id="str_size_2">А-</button>
+						</div>	
+					</section>	
+					<h1 class="main__title">Зміна кольору</h1>
+					<section class="content__interactive">						
+						<div class="content__color-change">
+							<div id="color"></div>
+							<button class="collection__button" id="bg_col_1"> Blue</button>
+							<button class="collection__button" id="bg_col_2"> Pink</button>
+							<button class="collection__button" id="bg_col_3"> Yellow</button>
+							<button class="collection__button" id="bg_col_4"> Ocean</button>
+							<button class="collection__button" id="bg_col_5"> Magenta</button>
+						</div>	
+					</section>	
+					<h1 class="main__title">Годинник</h1>
+					<section class="content__interactive">	
+						<div class="cotent__clock">				
+							<div id="clock">10:23:13</div>
+						</div>		
+					</section>	
+					<h1 class="main__title">Підказка</h1>
+					<button class="collection__button" id="but_pop" data-modal-target="#modal">Підказка</button>
+					  <div class="modal" id="modal">
+
+					    <div class="modal-header">
+					      <div class="title">Це підказка))</div>
+					      <button data-close-button class="close-button">&times;</button>
+					    </div>
+					    <div class="modal-body">
+      						Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+					    </div>
+					  </div>
+					  <div id="overlay"></div>
+					<h1 class="main__title">Змінити розмір p</h1>
+					<button class="collection__button" id="but_pop" onclick="changeCollection(pars)">Змінити</button>	
+					<p>Місяць на небі, зіроньки сяють,<br>
+						Тихо по морю човен пливе.<br>
+						В човні дівчина пісню співає,<br>
+						А козак чує – серденько мре.<br></p>
+					<p>Пісня та мила, пісня та люба,<br>
+						Все про кохання, все про любов.<br>
+						Як ми любились та й розійшлися,<br>
+						Тепер навіки зійшлися знов.<br></p>
+					<p>Ой очі, очі, очі дівочі,<br>
+						Темні, як нічка, ясні, як день!<br>
+						Ви ж мені, очі, вік вкоротили,<br>
+						Де ж ви навчились зводить людей?<br></p>
+					
+					<h1 class="main__title">Координати курсора й код натиснутої клавіші</h1>
+					<div>
+						<p>X: <span id="x-value"></span></p>
+						<p>Y: <span id="y-value"></span></p>
+						<p>Key: <span id="key-value"></span></p>
+					</div>
+					<h1 class="main__title">Видалення елементів</h1>
+					<button class="collection__button" id="delete" onclick="Delete()">Видалити</button>	
+					<ol id="parent">
+						<li>Елемент 1</li>
+						<li>Елемент 2</li>
+						<li>Елемент 3</li>
+						<li>Елемент 4</li>
+						<li>Елемент 5</li>
+					</ol>
+					<h1 class="main__title">Зміна теми</h1>
+					<button class="collection__button" id="chk">Темна</button>
+			<div id="mybutton">
+				<a href="#header" class="collection__button button-up">^</a>
+			</div>		
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__text">Copyight, 2021<br>A.Bondarenko</div>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
