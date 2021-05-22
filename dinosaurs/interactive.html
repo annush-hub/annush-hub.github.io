@@ -10,7 +10,7 @@
 	
 </head>
 	
-	<body onload = "Start()">
+	<body onload = "Start()" id="body">
 		<div class="wrapper">
 			<header class="header" id="header">
 				<a href="https://annush-hub.github.io/dinosaurs/" class="header__logo-link"><img src="images/dino-logo-1.png" class="header__logo"></a>
@@ -32,15 +32,6 @@
 							<button class="collection__button" onclick="Init()" id="image-btn">Запуск</button>
 						</div>	
 					</section>											
-					<h1 class="main__title">Зміна розміру</h1>
-					<section class="content__interactive">						
-						<div class="content__size-change">
-							<div id="string">Тестовий текст</div>
-							<button class="collection__button" id="str_size_1">А+</button>
-							<span class="font-zoom__item"></span>
-							<button class="collection__button" id="str_size_2">А-</button>
-						</div>	
-					</section>	
 					<h1 class="main__title">Зміна кольору</h1>
 					<section class="content__interactive">						
 						<div class="content__color-change">
@@ -101,11 +92,19 @@
 						<li>Елемент 4</li>
 						<li>Елемент 5</li>
 					</ol>
+
+					<h1 class="main__title">Зміна розміру</h1>
+					<section class="content__interactive">						
+						<div class="content__size-change">
+							<div id="string">Тестовий текст</div>
+							<button class="collection__button" id="str_size_1">А+</button>
+							<span class="font-zoom__item"></span>
+							<button class="collection__button" id="str_size_2">А-</button>
+						</div>	
+					</section>	
 					<h1 class="main__title">Зміна теми</h1>
 					<button class="collection__button" id="chk">Темна</button>
-			<div id="mybutton">
-				<a href="#header" class="collection__button button-up">^</a>
-			</div>		
+
 				</section>
 			</main>
 			<footer class="footer">

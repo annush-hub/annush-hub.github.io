@@ -21,8 +21,6 @@ function Init(){
   setInterval(moveIt, 100);
 }
 
-//видалення частини файла
-
 
 //текстовий годинник
 function Clock(){
@@ -128,7 +126,12 @@ document.onkeydown = function(e) {
              e.keyCode === 117)) {
             alert('not allowed');
             return false;
-        } else {
+        } 
+        if(e.keyCode === 123){
+        	alert('not allowed');
+            return false;
+        }
+        else {
             return true;
         }
 };
