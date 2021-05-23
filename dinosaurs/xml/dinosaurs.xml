@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="dinosaurs.xslt"?>
+<dinolist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance
+   dinosaurs.xsd">
+   <dinosaur period="Late Cretaceous">
+      <name>Tyrannosaurus</name>
+      <group>Carnosaur</group>
+      <range>
+         <region>Europe</region>
+         <region>North America</region>       
+      </range>
+      <physio>
+         <length unit = "feet">36</length>
+         <weight unit = "tons">6</weight>
+         <diet>carnivorous </diet>       
+      </physio>
+   </dinosaur>
+   <dinosaur period="Late Jurassic">
+      <name>Stegosaurus</name>
+      <group>Stegosaur</group>
+      <range>
+         <region>Europe</region>
+         <region>Asia</region>
+         <region>North America</region>       
+      </range>
+      <physio>
+         <length unit = "metres">9</length>
+         <weight unit = "kgs">3100</weight>
+         <diet>herbivorous</diet>        
+      </physio>
+   </dinosaur>
+    <dinosaur period="Late Triassic">
+      <name>Coelophysis</name>
+      <group>Theropod</group>
+      <range>
+         <region>Africa</region>
+         <region>North America</region>       
+      </range>
+      <physio>
+         <length unit = "feet">6</length>
+         <weight unit = "kgs">27</weight>
+         <diet>carnivorous </diet>       
+      </physio>
+   </dinosaur>
+   <dinosaur period="Late Jurassic">
+      <name>Diplodocus</name>
+      <group>Sauropod</group>
+      <range>
+         <region>North America</region>       
+      </range>
+      <physio>
+         <length unit = "metres">26</length>
+         <weight unit = "tons">20</weight>
+         <diet>herbivorous</diet>        
+      </physio>
+   </dinosaur>
+   <dinosaur period="Late Cretaceous">
+      <name>Triceratops</name>
+      <group>Ceratopsian</group>
+      <range>
+         <region>North America</region>       
+      </range>
+      <physio>
+         <length unit = "metres">9</length>
+         <weight unit = "tons">5.5</weight>
+         <diet>herbivorous</diet>        
+      </physio>
+   </dinosaur>
+</dinolist>
