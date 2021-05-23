@@ -65,11 +65,5 @@ exclude-result-prefixes="msxsl">
 			</td>
 			</tr>
 		</xsl:if>
-			<tr>
-			<th>Diet</th>
-			<td>
-			<xsl:value-of select="diet"/>
-			</td>
-			</tr>
 	</xsl:template>
 </xsl:stylesheet>
